@@ -1,18 +1,51 @@
-﻿port: 7890
+port: 7890
 socks-port: 7891
 allow-lan: true
 mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: FR_2375 @5.5mb, server: 62.210.113.98, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: FR_5003 @2, server: 62.210.113.98, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: FR_5600 @3, server: 62.210.113.98, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: NL_5003 @4, server: 172.99.188.71, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: FR_3306 @5, server: 62.210.113.98, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: FR_8009 @6, server: 62.210.113.98, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: FR_2376 @7, server: 62.210.113.98, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: FR_6679 @8, server: 62.210.113.98, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: FR_8080 @9, server: 62.210.113.98, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: FR_8091 @10, server: 62.210.113.98, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: NL_8008 @11, server: 172.99.188.71, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {"name":"A|香港","type":"trojan","server":"szdx-anhb.jiashumao.net","port":22481,"password":"1a5cc264-fbdf-3a5d-9f48-4c2bc757c038","sni":"ahbn.jiashumao.net"}
+  - {"name":"B|香港","type":"trojan","server":"bnbq-zf.jiashumao.net","port":26381,"password":"1a5cc264-fbdf-3a5d-9f48-4c2bc757c038","sni":"bnbq.jiashumao.net"}
+  - {"name":"C|香港","type":"trojan","server":"hkc-zf.jiashumao.net","port":33481,"password":"1a5cc264-fbdf-3a5d-9f48-4c2bc757c038","sni":"hkc.jiashumao.net"}
+  - {"name":"A|日本","type":"trojan","server":"jpa-zf.jiashumao.net","port":29881,"password":"1a5cc264-fbdf-3a5d-9f48-4c2bc757c038","sni":"jpa.jiashumao.net"}
+  - {"name":"B|日本","type":"trojan","server":"jpb-zf.jiashumao.net","port":20479,"password":"1a5cc264-fbdf-3a5d-9f48-4c2bc757c038","sni":"jpb.jiashumao.net"}
+  - {"name":"KR|韩国","type":"trojan","server":"hg.jiashumao.net","port":34210,"password":"1a5cc264-fbdf-3a5d-9f48-4c2bc757c038","sni":"hg.jiashumao.net"}
+  - {"name":"MA|澳门","type":"trojan","server":"ma-zf.jiashumao.net","port":22983,"password":"1a5cc264-fbdf-3a5d-9f48-4c2bc757c038","sni":"ma-ctm.jiashumao.net"}
+  - {"name":"MY|马来西亚","type":"trojan","server":"mlxy-zf.jiashumao.net","port":27171,"password":"1a5cc264-fbdf-3a5d-9f48-4c2bc757c038","sni":"mlxy.jiashumao.net"}
+  - {"name":"NF|奈飞","type":"trojan","server":"sxdx-nf.jiashumao.net","port":35401,"password":"1a5cc264-fbdf-3a5d-9f48-4c2bc757c038","sni":"nf.jiashumao.net"}
+  - {"name":"SG|新加坡","type":"trojan","server":"sg-zf.jiashumao.net","port":29465,"password":"1a5cc264-fbdf-3a5d-9f48-4c2bc757c038","sni":"sg.jiashumao.net"}
+  - {"name":"A|台湾","type":"trojan","server":"twa-zf.jiashumao.net","port":27919,"password":"1a5cc264-fbdf-3a5d-9f48-4c2bc757c038","sni":"twa.jiashumao.net"}
+  - {"name":"B|台湾","type":"trojan","server":"twb-zf.jiashumao.net","port":25888,"password":"1a5cc264-fbdf-3a5d-9f48-4c2bc757c038","sni":"twb.jiashumao.net"}
+  - {"name":"A|美国","type":"trojan","server":"usa-zf.jiashumao.net","port":42001,"password":"1a5cc264-fbdf-3a5d-9f48-4c2bc757c038","sni":"usa.jiashumao.net"}
+  - {"name":"B|美国","type":"trojan","server":"usb.jiashumao.net","port":12001,"password":"1a5cc264-fbdf-3a5d-9f48-4c2bc757c038","sni":"usb.jiashumao.net"}
+  - {"name":"VN|越南","type":"trojan","server":"yn-zf.jiashumao.net","port":40375,"password":"1a5cc264-fbdf-3a5d-9f48-4c2bc757c038","sni":"yn.jiashumao.net"}
+  - {"name":"乌克兰","type":"trojan","server":"wkl.jiashumao.net","port":50519,"password":"1a5cc264-fbdf-3a5d-9f48-4c2bc757c038","sni":"wkl.jiashumao.net"}
+  - {"name":"加拿大","type":"trojan","server":"jnd.jiashumao.net","port":30519,"password":"1a5cc264-fbdf-3a5d-9f48-4c2bc757c038","sni":"jnd.jiashumao.net"}
+  - {"name":"印度","type":"trojan","server":"yd.jiashumao.net","port":29957,"password":"1a5cc264-fbdf-3a5d-9f48-4c2bc757c038","sni":"yd.jiashumao.net"}
+  - {"name":"土耳其","type":"trojan","server":"trq-zf.jiashumao.net","port":30606,"password":"1a5cc264-fbdf-3a5d-9f48-4c2bc757c038","sni":"trq.jiashumao.net"}
+  - {"name":"德国","type":"trojan","server":"dg.jiashumao.net","port":29957,"password":"1a5cc264-fbdf-3a5d-9f48-4c2bc757c038","sni":"dg.jiashumao.net"}
+  - {"name":"法国（预上）","type":"trojan","server":"fg.jiashumao.net","port":35580,"password":"1a5cc264-fbdf-3a5d-9f48-4c2bc757c038","sni":"fg.jiashumao.net"}
+  - {"name":"波兰","type":"trojan","server":"bl.jiashumao.net","port":43505,"password":"1a5cc264-fbdf-3a5d-9f48-4c2bc757c038","sni":"bl.jiashumao.net"}
+  - {"name":"澳洲","type":"trojan","server":"aozhou.jiashumao.net","port":36580,"password":"1a5cc264-fbdf-3a5d-9f48-4c2bc757c038","sni":"aozhou.jiashumao.net"}
+  - {"name":"爱尔兰（预上）","type":"trojan","server":"arl.jiashumao.net","port":31580,"password":"1a5cc264-fbdf-3a5d-9f48-4c2bc757c038","sni":"arl.jiashumao.net"}
+  - {"name":"瑞典（预上）","type":"trojan","server":"rd.jiashumao.net","port":37580,"password":"1a5cc264-fbdf-3a5d-9f48-4c2bc757c038","sni":"rd.jiashumao.net"}
+  - {"name":"英国","type":"trojan","server":"yg.jiashumao.net","port":36419,"password":"1a5cc264-fbdf-3a5d-9f48-4c2bc757c038","sni":"yg.jiashumao.net"}
+  - {"name":"荷兰","type":"trojan","server":"hl.jiashumao.net","port":45519,"password":"1a5cc264-fbdf-3a5d-9f48-4c2bc757c038","sni":"hl.jiashumao.net"}
+  - {name: 香港 1, server: hk1gcp.nana7micloud.online, port: 443, type: trojan, password: f3008f98-25e1-45d6-929b-c5ba196bccf5, sni: hk1gcp.nana7micloud.online, skip-cert-verify: true, udp: true}
+  - {name: 日本 1, server: jp1gcp.nana7micloud.online, port: 443, type: trojan, password: f3008f98-25e1-45d6-929b-c5ba196bccf5, sni: jp1gcp.nana7micloud.online, skip-cert-verify: true, udp: true}
+  - {name: JP_0443 , server: 85.208.108.59, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: JP_9101 , server: 85.208.108.58, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: JP_8118 , server: 85.208.108.60, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: JP_0443  2, server: 85.208.108.60, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: JP_6679 , server: 85.208.108.60, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: JP_5600 , server: 85.208.108.18, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: JP_8881 , server: 85.208.108.59, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: JP_9102 , server: 85.208.108.58, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: JP_8882 , server: 85.208.108.58, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: JP_8090 , server: 85.208.108.60, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: JP_7002 , server: 85.208.108.58, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: JP_8119 , server: 85.208.108.21, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: JP_2375 , server: 85.208.108.60, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: JP_6679  2, server: 85.208.108.58, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: JP_6379 , server: 85.208.108.58, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
